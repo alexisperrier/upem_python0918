@@ -1,0 +1,49 @@
+import pandas as pd
+df = pd.read_csv('../data/les-arbres.csv')
+df = pd.read_csv('../data/les-arbres.csv')
+df = pd.read_csv('../data/les-arbres.csv')
+?pd.read_csv
+df = pd.read_csv('../data/les-arbres.csv', error_bad_lines = False)
+df.shape
+df.columns
+?pd.read_csv
+df = pd.read_csv('../data/les-arbres.csv', error_bad_lines = False, delimiter = ';')
+df.shape
+df.head()
+df.describe()
+df.['HAUTEUR (m)'].hist(bins = 100)
+df['HAUTEUR (m)'].hist(bins = 100)
+df = df[df['HAUTEUR (m)'] < 100]
+df.describe()
+df['HAUTEUR (m)'].hist(bins = 100)
+df = df[df['CIRCONFERENCEENCM'] < 1000]
+df.describe()
+df['HAUTEUR (m)'].hist(bins = 100)
+plt.show()
+df[df['HAUTEUR (m)'] > 100].shape
+df[df['HAUTEUR (m)'] > 50].shape
+df[df['HAUTEUR (m)'] > 50].head()
+plt.show()
+df['HAUTEUR (m)'].hist(bins = 100)
+df['CIRCONFERENCEENCM'].hist(bins = 100)
+plt.plot(df['CIRCONFERENCEENCM'], df['HAUTEUR (m)'])
+plt.show()
+plt.plot(df['CIRCONFERENCEENCM'], df['HAUTEUR (m)'], '.')
+plt.plot(df['CIRCONFERENCEENCM'], df['HAUTEUR (m)'], '.', alpha = 0.4)
+df.head()
+df['ESPECE'].value_counts()
+plt.show()
+cond = df['ESPECE' == 'hippocastanum']
+cond = df['ESPECE'] == 'hippocastanum'
+plt.plot(df[cond]['CIRCONFERENCEENCM'], df[cond]['HAUTEUR (m)'], '.', alpha = 0.4)
+cond = df['ESPECE'] == 'japonica'
+plt.plot(df[cond]['CIRCONFERENCEENCM'], df[cond]['HAUTEUR (m)'], '.', alpha = 0.4)
+plt.show()
+df['ARRONDISSEMENT'].value_counts()
+plt.bar(df['LIBELLEFRANCAIS'].value_counts().keys(), df['LIBELLEFRANCAIS'].value_counts().values)
+
+
+df['DOMANIALITE'].value_counts()
+type d'arbre par DOMANIALITE
+
+df['REMARQUABLE'].value_counts(dropna = False)
