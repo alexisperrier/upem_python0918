@@ -81,10 +81,3 @@ df['DOMANIALITE'].value_counts()
 type d'arbre par DOMANIALITE
 
 df['REMARQUABLE'].value_counts(dropna = False)
-
-https://data.culture.gouv.fr/explore/dataset/fete-de-la-musique-2018/table/
-
-Fête de la musique 2018
-
-
-http://discours.vie-publique.fr/notices/187000798.html
