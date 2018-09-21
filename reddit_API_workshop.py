@@ -2,10 +2,13 @@
 
 * create account
 
-* create app
+# create app
+
 https://www.reddit.com/prefs/apps
 
 
+
+see also
 https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example#first-steps
 
 https://praw.readthedocs.io/en/latest/getting_started/quick_start.html
