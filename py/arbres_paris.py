@@ -23,6 +23,8 @@ def download_dataset(download_url):
 DATA_PATH = '/Users/alexis/amcp/upem/python0918/data/'
 URL = 'https://opendata.paris.fr/explore/dataset/les-arbres/download/?format=csv&timezone=America/New_York&use_labels_for_header=true'
 
+print("Hello")
+
 if __name__== '__main__':
     # main code
 
